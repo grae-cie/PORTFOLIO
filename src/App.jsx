@@ -8,7 +8,7 @@ import About from'./about/About'
 import Home from './Home/home'
 import Project from './Project/project'
 import Skills from './Skills/skills'
-import Cv from './Home/cv'
+import Cv from './cv/cv'
 
 
 function App() {
