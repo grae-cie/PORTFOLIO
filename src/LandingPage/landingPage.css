@@ -1,0 +1,17 @@
+.landingPage-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: center;
+    height: 90vh;
+}
+
+.landingPage-btn{
+   background-color: #FF69B4;
+   border: none;
+   font-family: inherit;
+   border-radius: 5px;
+   padding: 7px 20px;
+   font-weight: 500;
+}

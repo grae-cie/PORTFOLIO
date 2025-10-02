@@ -1,0 +1,54 @@
+a {
+    color: #FF69B4;
+    text-decoration: inherit;
+}
+
+.homepage-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-size: 1em;
+    margin: 0 auto;
+    margin-top: 70px;
+    position: relative;
+    max-width: 600px;
+    align-items: center;
+    text-align: left; 
+}
+
+
+.homepage-body{
+    margin: 0px 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homepage-body h1{
+   font-size: 3rem;
+}
+
+.homepage-span{
+    color: #FF69B4;
+}
+
+.download-link{
+    color: #FF69B4;
+    text-decoration: none;
+}
+ 
+.download-link:visited {
+    color: #FF69B4;
+}
+
+.download-link:hover {
+    color: #f12b8e;
+}
+
+.cv-footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 40px;
+}

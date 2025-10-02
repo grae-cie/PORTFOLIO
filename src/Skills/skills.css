@@ -1,0 +1,22 @@
+.skills-container{
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: left;
+    margin-top: 70px;
+}
+.skills-container h2{
+   margin: 0px;
+}
+
+.skills-container h1 {
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.skills-container p {
+    margin: 0px;
+    margin-bottom: 10px;
+}
