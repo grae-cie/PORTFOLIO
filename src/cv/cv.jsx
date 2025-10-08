@@ -1,7 +1,7 @@
 import React from "react";
 import "./cv.css"; // optional external styling
 
-function Cv() {
+function Cv({darkMode, setDarkMode}) {
   return (
     <div className="cv-container">
       <header className="cv-header">

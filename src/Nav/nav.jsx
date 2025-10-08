@@ -8,11 +8,12 @@ function Nav() {
   const [active, setActive] = useState("")
 
   const toggleMenu = () => {
-    if (isOpen) {
-      setActive(null)
-    }
     setIsOpen(!isOpen)
   }
+    const handleLinkClick = (section) => {
+    setActive(section);
+    setIsOpen(false); // ✅ close the menu when a link is clicked
+  };
 
   return (
     <div className='nav-container'>
@@ -32,13 +33,13 @@ function Nav() {
       <h1 className='nav-span'>GRACE</h1>
 
       <div className={`nav-link-container ${isOpen ? "open" : ""}`}>
-        <a href='#about' className={`nav-link ${active === "about" ? "active-link" : ""}`} onClick={() => setActive("about")}>
+        <a href='#about' className={`nav-link ${active === "about" ? "active-link" : ""}`} onClick={() => handleLinkClick("about")}>
           About Me
         </a>
-        <a href='#skill' className={`nav-link ${active === "skill" ? "active-link" : ""}`}  onClick={() => setActive("skill")}>
+        <a href='#skill' className={`nav-link ${active === "skill" ? "active-link" : ""}`}  onClick={() => handleLinkClick("skills")}>
           Skills
         </a>
-        <a href='#project'className={`nav-link ${active === "project" ? "active-link" : ""}`}  onClick={() => setActive("project")}>
+        <a href='#project'className={`nav-link ${active === "project" ? "active-link" : ""}`}  onClick={() => handleLinkClick("project")}>
           Projects
         </a>
       </div>

@@ -12,3 +12,15 @@
 .contact-div p {
     margin: 0;
 }
+
+.contact-icon {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+
+/* 🌚 Dark Mode */
+body.dark-mode .contact-icon {
+    color: #EAEAEA;
+}
+

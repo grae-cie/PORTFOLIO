@@ -1,4 +1,3 @@
-import React from 'react'
 import Project from '../Project/project'
 import Skills from '../Skills/skills'
 import About from '../about/About'
@@ -7,14 +6,20 @@ import Contact from '../contact/contact'
 import './home.css'
 import { Link } from "react-router-dom";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import { MdLightMode, MdOutlineDarkMode} from "react-icons/md";
+ 
 
 
 
+function Home({darkMode, setDarkMode}) {
+  const toggleDarkMode = () => setDarkMode(!darkMode)
 
-function Home() {
   return (
     <div className='homepage-container'>
       <Nav/>
+      <button className='toggleTheme' onClick={toggleDarkMode}>
+        {darkMode ? <MdLightMode color='white' size={24}/> : <MdOutlineDarkMode color='black' size={24}/>  }
+      </button>
       <section  id='home' className='homepage-body'>
         <h1>Hello Mate, <br/> I'm Grace Ben a <span className='homepage-span'>Web Developer</span></h1>
         <p>Hi, I’m Grace! 👋 I’m a passionate web developer with almost full-stack experience and a growing interest in mobile app development. I love building clean, interactive web experiences. When I’m not coding, I enjoy watching series and listening to music. Explore my work and see what I’ve built! </p>

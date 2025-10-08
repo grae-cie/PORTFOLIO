@@ -8,30 +8,30 @@ function Project() {
         <h1>My Projects</h1>
       </div>
       <div className='project-box-container'>
-        <div className="project-box">
+        <a href='https://bmi-calculator-pi-ten-53.vercel.app/' className="project-box">
           <h2>BMI calculator</h2>
-          <p>Created a Body Mass Calculator that checks if the User is obese, Underweight, Overweight and Normal</p>
-        </div>
-        <div className="project-box">
+          <p>Created a responsive Body Mass Index (BMI) Calculator using HTML, CSS, and JavaScript that determines whether a user is underweight, normal, overweight, or obese.</p>
+        </a>
+        <a href='https://briefly-liart.vercel.app/' className="project-box">
           <h2>Briefly PDF Summarizer</h2>
-          <p>Built a sleek app that takes a bulky pdf and turns it into something less bulky in seconds </p>
-        </div>
-        <div className="project-box">
+          <p>Built a sleek web app that compresses large PDF files into smaller sizes within seconds for faster sharing and storage.</p>
+        </a>
+        <a href='https://todo-app-iota-lovat-34.vercel.app/' className="project-box">
           <h2>Todo App</h2>
-          <p>Engineered the classic Todo App that helps a user to show all their pending tasks and also allows them to delete them </p>
-        </div>
-        <div className="project-box">
+          <p>Engineered a classic Todo App using HTML, CSS, and JavaScript that allows users to view all pending tasks and delete them seamlessly. </p>
+        </a>
+        <a href='https://news-homepage-delta-seven.vercel.app/' className="project-box">
           <h2>News Landing Page</h2>
-            <p>Designed the landing page of a news outlet website with unique CSS styling</p> 
-        </div>
-        <div className="project-box">
-          <h2>UI Dashboard Landing Page</h2>
-          <p> Designed the Landing Page of a UI Dashboard that showed my unique Css skills</p>
-        </div>
-        <div className="project-box">
-          <h2>Panda Collection</h2>
-          <p>Built a cute page that showed my beautiful panda collections using different css styles</p>
-        </div>
+            <p>Designed a visually appealing landing page for a news outlet website using unique CSS styling to enhance layout and user experience.</p> 
+        </a >
+        <a href='https://weather-app-two-flame-73.vercel.app/' className="project-box">
+          <h2>Weather App</h2>
+          <p>Developed a mini weather app using HTML, CSS, and JavaScript that displays accurate real-time weather information for any searched location.</p>
+        </a>
+        <a className="project-box">
+          <h2>EstateLink(Coming Soon)</h2>
+          <p>Developing a dynamic real estate website that connects property buyers and sellers through an intuitive and user-friendly interface.</p>
+        </a>
       </div>
     </div>
   )

@@ -8,6 +8,14 @@
     color: #333;
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+
 .cv-header {
     text-align: center;
     border-bottom: 1px solid #ddd;
@@ -30,3 +38,4 @@
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
+

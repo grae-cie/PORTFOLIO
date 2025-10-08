@@ -1,6 +1,27 @@
-a {
-    color: #FF69B4;
-    text-decoration: inherit;
+
+body.dark-mode{
+    background-color: #1A1A2E ;
+    color: #c5c5c5;
+}
+
+body.dark-mode h1,
+body.dark-mode h2{
+
+    color: white;
+}
+
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode a{
+    color: #c5c5c5 ;
+
+}
+
+.toggleTheme{
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 25px;
 }
 
 .homepage-container{
@@ -24,7 +45,7 @@ a {
     justify-content: center;
     flex-direction: column;
 }
-
+ 
 .homepage-body h1{
    font-size: 3rem;
 }
@@ -33,16 +54,16 @@ a {
     color: #FF69B4;
 }
 
-.download-link{
+.view-cv{
     color: #FF69B4;
     text-decoration: none;
 }
  
-.download-link:visited {
+.view-cv:visited {
     color: #FF69B4;
 }
 
-.download-link:hover {
+.view-cv:hover {
     color: #f12b8e;
 }
 

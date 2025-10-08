@@ -3,59 +3,51 @@ import{
   Routes,
   Route,
 } from "react-router-dom"
+import React, { useState, useEffect } from "react";
 import LandingPage from './LandingPage/landingPage'
-import About from'./about/About'
 import Home from './Home/home'
-import Project from './Project/project'
-import Skills from './Skills/skills'
+
 import Cv from './cv/cv'
 
 
 function App() {
+
+    const [darkMode, setDarkMode] = useState(() => {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const savedTheme = localStorage.getItem("darkMode")
+    return savedTheme ? savedTheme === "true" : prefersDark
+  } )
+
+  useEffect(() => {
+    if(darkMode){
+      document.body.classList.add("dark-mode")
+    } else{
+      document.body.classList.remove("dark-mode")
+    }
+
+    localStorage.setItem("darkMode", darkMode)
+  }, [darkMode])
+
   return (
    <Router>
     <Routes>
-      <Route
-        path="/"
-        element = {
-          <LandingPage/>
-        }
+      <Route path="/" element = {<LandingPage darkMode = {darkMode} setDarkMode = {setDarkMode} />}
       />
 
       <Route
         path="/home"
         element = {
-          <Home/>
+          <Home darkMode = {darkMode} setDarkMode = {setDarkMode}/>
         }
       />
 
       <Route 
        path="/cv" 
        element = {
-         <Cv />
+         <Cv darkMode = {darkMode} setDarkMode = {setDarkMode} />
         } 
       />
-
-      <Route
-        path="/about"
-        element = {
-         <About/>
-        } 
-      />
-    
-      <Route
-        path="/project"
-        element ={
-          <Project/>
-        }
-      />
-      
-      <Route
-        path="/skills"
-        element = {
-          <Skills/>
-        }
-      />
+        
     </Routes>
    </Router>
   )

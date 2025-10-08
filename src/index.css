@@ -3,12 +3,14 @@ body{
     font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
-    color: rgb(97, 97, 97);
+    color: #616161;
 }
 body h1, h2 {
     color: rgba(0, 0, 0, 0.89);
 }
-
+body a{
+    text-decoration: none;
+}
 
 /* For Chrome, Edge, Safari */
 ::-webkit-scrollbar {
