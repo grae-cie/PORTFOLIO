@@ -12,7 +12,7 @@ function Project() {
           <h2>BMI calculator</h2>
           <p>Created a responsive Body Mass Index (BMI) Calculator using HTML, CSS, and JavaScript that determines whether a user is underweight, normal, overweight, or obese.</p>
         </a>
-        <a href='https://briefly-liart.vercel.app/' className="project-box">
+        <a href='' className="project-box">
           <h2>Briefly PDF Summarizer</h2>
           <p>Built a sleek web app that compresses large PDF files into smaller sizes within seconds for faster sharing and storage.</p>
         </a>
